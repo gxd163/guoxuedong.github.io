@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>变量声明总结 | heimxd学习笔记</title>
+    <meta name="description" content="heimxd的前端学习笔记">
+    <meta name="generator" content="VuePress 1.4.0">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.59ba12ca.css" as="style"><link rel="preload" href="/assets/js/app.dc59ea6d.js" as="script"><link rel="preload" href="/assets/js/2.ba6b100d.js" as="script"><link rel="preload" href="/assets/js/10.fa1d9975.js" as="script"><link rel="prefetch" href="/assets/js/11.73363031.js"><link rel="prefetch" href="/assets/js/12.ee0e87a3.js"><link rel="prefetch" href="/assets/js/13.df6f754f.js"><link rel="prefetch" href="/assets/js/3.5f2783e4.js"><link rel="prefetch" href="/assets/js/4.5f60d4ea.js"><link rel="prefetch" href="/assets/js/5.153b7d28.js"><link rel="prefetch" href="/assets/js/6.22f1fe3a.js"><link rel="prefetch" href="/assets/js/7.a49358f0.js"><link rel="prefetch" href="/assets/js/8.ebfa1156.js"><link rel="prefetch" href="/assets/js/9.0060cbb2.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.59ba12ca.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">heimxd学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  笔记
+</a></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  LeetCode
+</a></div> <a href="https://github.com/heimxd/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">
+  笔记
+</a></div><div class="nav-item"><a href="/interview/" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  LeetCode
+</a></div> <a href="https://github.com/heimxd/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>浏览器原理</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/从输入URL到页面加载的过程.html" class="sidebar-link">从输入URL到页面加载的过程</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>HTML</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>CSS</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/变量声明总结.html" class="active sidebar-link">变量声明总结</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/变量声明总结.html#用法" class="sidebar-link">用法</a></li><li class="sidebar-sub-header"><a href="/blog/变量声明总结.html#执行上下文" class="sidebar-link">执行上下文</a></li><li class="sidebar-sub-header"><a href="/blog/变量声明总结.html#变量提升" class="sidebar-link">变量提升</a></li><li class="sidebar-sub-header"><a href="/blog/变量声明总结.html#块级作用域" class="sidebar-link">块级作用域</a></li><li class="sidebar-sub-header"><a href="/blog/变量声明总结.html#暂存死区" class="sidebar-link">暂存死区</a></li><li class="sidebar-sub-header"><a href="/blog/变量声明总结.html#重复声明" class="sidebar-link">重复声明</a></li><li class="sidebar-sub-header"><a href="/blog/变量声明总结.html#扩展" class="sidebar-link">扩展</a></li></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>工程化</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/前端测试.html" class="sidebar-link">前端测试</a></li><li><a href="/blog/前端规范.html" class="sidebar-link">前端规范</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>计算机基础</span> <!----></p> <!----></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>其他</span> <!----></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="变量声明总结"><a href="#变量声明总结" class="header-anchor">#</a> 变量声明总结</h1> <h2 id="用法"><a href="#用法" class="header-anchor">#</a> 用法</h2> <ul><li>var 语句声明一个变量，并可选地将其初始化为一个值。</li> <li>let 语句声明一个块级作用域的本地变量，并且可选的将其初始化为一个值，不可重新声明。</li> <li>const 语句声明一个块级作用域的本地变量，并且初始化的值是必要的，并且不能重新声明。常量的值不能通过重新赋值来改变。</li></ul> <h2 id="执行上下文"><a href="#执行上下文" class="header-anchor">#</a> 执行上下文</h2> <h3 id="浏览器解释代码流程"><a href="#浏览器解释代码流程" class="header-anchor">#</a> 浏览器解释代码流程</h3> <p>浏览器在解释代码的时候，分为2个阶段。第一个阶段为编译阶段，第二个为执行阶段。编译阶段，浏览器会生成两部分内容：执行上下文（Execution context）和可执行代码。执行上下文以栈的形式存储在栈空间。执行代码时候，首先将全局上下文压入栈。遇到函数的时候，再进行编译和执行2个阶段，编译阶段生成函数执行上下文和该函数可执行代码，执行阶段将压入函数上下文栈，也就是函数调用栈。等函数执行完后，将该函数执行上下文从调用栈弹出。全局执行上下文始终在栈顶，关闭页面的时候将全局执行上下文弹出。</p> <h3 id="执行上下文分类"><a href="#执行上下文分类" class="header-anchor">#</a> 执行上下文分类</h3> <ul><li>全局执行上下文</li> <li>函数执行上下文</li> <li>eval执行上下文</li></ul> <h3 id="执行上下文中的内容"><a href="#执行上下文中的内容" class="header-anchor">#</a> 执行上下文中的内容</h3> <ul><li>变量环境
+<ul><li>存放var声明的变量，并初始化为undefinded。</li> <li>存放function 声明的变量，并初始化为函数本身引用</li></ul></li> <li>词法环境
+<ul><li>存放let, const, class声明的变量</li></ul></li> <li>this，this的绑定是在编译阶段就决定的</li> <li>outer，指向父级执行上下文的引用。浏览器也是通过该属性实现作用域链的机制。</li></ul> <h2 id="变量提升"><a href="#变量提升" class="header-anchor">#</a> 变量提升</h2> <p>var, let, const 在声明变量的时候，都会有变量提升。浏览器在编译阶段初始化变量的行为，就是变量提升。</p> <h2 id="块级作用域"><a href="#块级作用域" class="header-anchor">#</a> 块级作用域</h2> <p>es6以前，作用域分为2种，全局作用域和函数作用域。es6新增了块级作用域。</p> <h3 id="浏览器是如何实现块级作用域的"><a href="#浏览器是如何实现块级作用域的" class="header-anchor">#</a> 浏览器是如何实现块级作用域的</h3> <p>let,const,class声明的变量会存入执行上下文的词法环境。词法环境内部也维护一个栈结构，每遇到一个块结构，就会将该块内的变量或者常量作为一个块，压如词法环境栈，等该块级代码执行完后，把该块从栈中弹出。</p> <h3 id="如何查找一个变量"><a href="#如何查找一个变量" class="header-anchor">#</a> 如何查找一个变量</h3> <p>浏览器在查找一个变量的时候，首先会在当前执行上下文中的词法环境中查找，没找到再从变量环境中查找。还没有找到就通过执行上下文的outer属性找到父级执行上下文，一直找到全局执行上下文。</p> <h2 id="暂存死区"><a href="#暂存死区" class="header-anchor">#</a> 暂存死区</h2> <p>通过let, const, class 声明的变量或者常量，在编译阶段的时候，只声明，不初始化，直到代码执行到该声明的代码片段时候，才初始化。所以从代码块顶部到初始化这段区间，都是暂存死区。在暂存死区或者变量或者常量的时候，浏览器都会抛出错误。、</p> <h2 id="重复声明"><a href="#重复声明" class="header-anchor">#</a> 重复声明</h2> <p>在同一个块级作用域内，let,const,class不允许声明相同变量名的变量</p> <h2 id="扩展"><a href="#扩展" class="header-anchor">#</a> 扩展</h2> <ul><li>typeof 可以判断一个变量是否被声明，但如果一个是let，const，class声明，也会抛出暂存死区的错误</li> <li>switch case语句中，如果在不同的case中用let声明相同变量，会抛出重复声明的错误，通过case:{}增加块级作用域来解决。</li> <li>可以通过块级作用域来模仿私有成员，而不是闭包的形式</li></ul> <div class="language-javascript extra-class"><pre class="language-javascript"><code>      <span class="token keyword">var</span> Thing<span class="token punctuation">;</span>
+
+      <span class="token punctuation">{</span>
+        <span class="token keyword">let</span> privateScope <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">WeakMap</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">let</span> counter <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+        <span class="token function-variable function">Thing</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">this</span><span class="token punctuation">.</span>someProperty <span class="token operator">=</span> <span class="token string">'foo'</span><span class="token punctuation">;</span>
+
+          privateScope<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            hidden<span class="token operator">:</span> <span class="token operator">++</span>counter<span class="token punctuation">,</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">Thing</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">showPublic</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>someProperty<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+        <span class="token class-name">Thing</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">showPrivate</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">return</span> privateScope<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">.</span>hidden<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">typeof</span> privateScope<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// &quot;undefined&quot;</span>
+
+      <span class="token keyword">var</span> thing <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Thing</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>thing<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// Thing {someProperty: &quot;foo&quot;}</span>
+
+      thing<span class="token punctuation">.</span><span class="token function">showPublic</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// &quot;foo&quot;</span>
+
+      thing<span class="token punctuation">.</span><span class="token function">showPrivate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">// 1</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/30/2020, 11:10:55 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/从输入URL到页面加载的过程.html" class="prev">
+        从输入URL到页面加载的过程
+      </a></span> <span class="next"><a href="/blog/前端测试.html">
+        前端测试
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.dc59ea6d.js" defer></script><script src="/assets/js/2.ba6b100d.js" defer></script><script src="/assets/js/10.fa1d9975.js" defer></script>
+  </body>
+</html>
